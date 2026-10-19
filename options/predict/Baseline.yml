@@ -1,0 +1,17 @@
+#### network structures
+network:
+  name: FReSHIR # name of the network used. Check create_model function for available names
+  img_channels: 3
+  out_channels: 3
+  width: 24
+  middle_blk_num_enc: 1
+  middle_blk_num_dec: 1
+  enc_blk_nums: [2,2,2,2]
+  dec_blk_nums: [3,3,3,3]
+  dilations: [1,4,9]
+  cutoff: [0.4, 0.32, 0.23, 0.12]
+  extra_depth_wise: True
+  guiding_branches: False
+
+Resize: False # whether to resize the input images. Uses Bilinear interpolation if True
+scale: 1.0 # scale of the input images. Ignored if Resize is False

@@ -1,0 +1,31 @@
+#### datasets
+datasets:
+  name: Unpaired
+  train:
+    train_path: /media/Data # training set path. Not used, but needed so the dataloaders are loaded correctly.
+    verbose: True
+  val:
+    test_path: /media/Data/RTTS/JPEGImages
+    batch_size_test: 1 # it is expected to be one. Otherwise it could return not the expected results.
+
+#### network configuration keys
+network:
+  name: FReSHIR # name of the network used. Check create_model function for available names
+  find_unused_params: False # whether to find unused parameters in the model. Leave it as False if you are using all the parameters defined in the network during the forward. Else, use True.
+  guiding_branches: False # whether to use guiding branches for training (side_loss)
+
+#### network parameters, you may define the names that you want to use in the network. Unused keys will be ignored.
+  img_channels: 3
+  out_channels: 3
+  width: 24
+  middle_blk_num_enc: 1
+  middle_blk_num_dec: 1
+  enc_blk_nums: [2,2,2,2]
+  dec_blk_nums: [3,3,3,3]
+  dilations: [1,4,9]
+  cutoff: [0.4, 0.32, 0.23, 0.12]
+  extra_depth_wise: False
+
+Resize: False
+scale: 1.0
+unsupervised_losses: ['musiq', 'maniqa', 'clipiqa+', 'liqe', 'brisque']

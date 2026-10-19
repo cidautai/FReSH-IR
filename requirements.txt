@@ -1,0 +1,18 @@
+# Core — install torch/torchvision matching your CUDA version from https://pytorch.org
+torch
+torchvision
+
+# Image processing
+numpy>=1.24
+Pillow>=10.0
+opencv-python>=4.8
+
+# Training / inference utilities
+tqdm>=4.65
+PyYAML>=6.0
+ptflops>=0.7          # model complexity (MACs / params)
+
+# Losses & metrics
+pytorch-msssim>=1.0   # SSIM loss
+lpips>=0.1.4          # LPIPS perceptual metric (used in test.py)
+pyiqa>=0.1.13         # no-reference metrics (used in test_unpaired.py)
