@@ -18,7 +18,6 @@ Adverse weather conditions such as rain, haze, and snow significantly degrade im
 
 ## Network Architecture
 
-<!-- TODO: Add the final architecture figure and ensure the path matches the repository. -->
 <p align="center">
   <img src="assets/arch_model.png" width="95%" alt="FReSH-IR network architecture"/>
 </p>
@@ -34,12 +33,12 @@ Please update the versions below to match the environment used for the official 
 
 ```bash
 # Clone this repository
-git clone REPLACE_WITH_REPOSITORY_URL
+git clone https://github.com/cidautai/FReSH-IR.git
 cd FReSH-IR
 
 # Create and activate a Python environment
-python3 -m venv venv_FReSHIR
-source venv_FReSHIR/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -63,8 +62,6 @@ Download the datasets from their official sources and arrange them according to 
 
 Please refer to the paper for the complete quantitative comparisons and evaluation protocols.
 
-<!-- TODO: Replace placeholders with the exact results reported in the paper.
-     Include the same metrics and protocols as the paper; do not publish TBD values. -->
 | Dataset | Method | PSNR-Y | SSIM | Params | GMACs |
 |---|---|---:|---:|---:|---:|
 | Outdoor Data | FReSH-IR (ours) | 30.84 | 0.90 | 8.32 | 3.46 |
