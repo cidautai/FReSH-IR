@@ -1,10 +1,13 @@
 # [WACV 2027] FReSH-IR: Efficient All-in-One Weather Restoration using Spectral Harmonization
 
+[![Hugging Face](https://img.shields.io/badge/Demo-%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/spaces/Cidaut/FReSH-IR) 
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2609.02839)
+
 ❄️🌧️ Download the model weights from [checkpoints](https://cidautes-my.sharepoint.com/:f:/g/personal/alvgar_cidaut_es/IgDU1k43ZjlXQabZkt5YUYZbATIteu8Fe_5qZ5U5VerTSuo?e=dYFDO4)
 
 [Paula Garrido-Mellado](https://scholar.google.es/citations?user=YXE2fY4AAAAJ&hl=es), [Daniel Feijoo](https://scholar.google.es/citations?user=hqbPn4YAAAAJ&hl=es), [Yuning Cui](https://orcid.org/0000-0002-1279-5539), [Alvaro Garcia](https://scholar.google.es/citations?user=c6SJPnMAAAAJ&hl=es), [Marcos V. Conde](https://scholar.google.es/citations?user=NtB1kjYAAAAJ&hl=es) (CIDAUT AI, University of Wuerzburg and Technical University of Munich)
 
-📄 [Paper (arXiv)](https://arxiv.org/abs/2609.02839)
+Try the model for free in 🤗 [HuggingFace Spaces: FReSH-IR](https://huggingface.co/spaces/Cidaut/FReSH-IR)
 
 **TLDR.** Adverse weather conditions such as rain, haze, and snow degrade image quality. FReSH-IR is a lightweight all-in-one image restoration method that processes high- and low-frequency information at multiple scales to restore images affected by different weather degradations, aiming for a strong balance between restoration quality and computational efficiency.
 
@@ -111,8 +114,6 @@ The output directory and supported arguments depend on the released inference sc
 | Degraded | Histoformer | SSGformer | **FReSH-IR** (ours) | Ground Truth |
 
 ## Citation and Acknowledgement
-
-This work has been accepted at the **IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2027**.
 
 If you find this work useful, please cite:
 
